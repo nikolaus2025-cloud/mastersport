@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 
+      MASTERSPORT UNDER CONSTRUCTION PAGE
+      ===================================
+      INSTRUCTIONS:
+      1. This is the ONLY file you need.
+      2. DELETE all other files in this directory (App.tsx, index.tsx, package.json, vite.config.ts, etc).
+      3. Update social media links in the footer section with your actual URLs.
+      4. Upload this file to Digital Ocean.
+    -->
+    <title>MasterSport - Under Construction</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                blue: '#3069FE', // MasterSport Blue
+                dark: '#0B0B0B',
+                gray: '#1A1A1A',
+                light: '#F4F4F4'
+              }
+            },
+            fontFamily: {
+              sans: ['Open Sans', 'sans-serif'],
+              display: ['Montserrat', 'sans-serif'],
+            },
+            animation: {
+              'fade-in': 'fadeIn 1s ease-out forwards',
+              'slide-up': 'slideUp 0.8s ease-out forwards',
+              'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+            },
+            keyframes: {
+              fadeIn: {
+                '0%': { opacity: '0' },
+                '100%': { opacity: '1' },
+              },
+              slideUp: {
+                '0%': { transform: 'translateY(20px)', opacity: '0' },
+                '100%': { transform: 'translateY(0)', opacity: '1' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        margin: 0;
+        background-color: #0B0B0B;
+        color: #F4F4F4;
+        overflow-x: hidden;
+      }
+    </style>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="relative min-h-screen flex flex-col font-sans text-brand-light">
+
+    <!-- BACKGROUND COMPONENT -->
+    <div class="fixed inset-0 z-0 select-none bg-brand-dark">
+        <!-- Base Dark Layer -->
+        <div class="absolute inset-0 bg-brand-dark"></div>
+        
+        <!-- Background Image -->
+        <div 
+          class="absolute inset-0 opacity-30 mix-blend-overlay"
+          style="background-image: url('https://images.unsplash.com/photo-1552674605-46d531d04cc6?q=80&w=2070&auto=format&fit=crop'); background-size: cover; background-position: center; filter: grayscale(100%) contrast(110%) brightness(0.6);">
+        </div>
+  
+        <!-- Gradient Overlay -->
+        <div class="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-transparent"></div>
+        
+        <!-- Blue Glow -->
+        <div class="absolute top-[-20%] left-[-10%] w-[50vw] h-[50vw] bg-brand-blue opacity-[0.08] blur-[150px] rounded-full"></div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <main class="relative z-10 flex-grow flex items-center justify-center p-6 flex-col">
+        
+        <!-- HERO COMPONENT -->
+        <div class="w-full flex flex-col items-center justify-center text-center animate-slide-up opacity-0" style="animation-fill-mode: forwards;">
+      
+            <!-- Brand Logo -->
+            <!--<div class="mb-12 md:mb-16 transform transition-transform hover:scale-105 duration-700">
+              <div class="text-4xl md:text-5xl lg:text-6xl font-display font-bold tracking-tight select-none">
+                <span class="text-brand-blue drop-shadow-[0_0_15px_rgba(48,105,254,0.5)]">Master</span>
+                <span class="font-normal text-white ml-2">sport</span>
+              </div>
+            </div> -->
+      
+            <div class="space-y-8 flex flex-col items-center">
+              <!-- Main Headline -->
+              <h1 class="text-5xl md:text-7xl lg:text-9xl font-display font-thin uppercase leading-none tracking-wider text-transparent bg-clip-text bg-gradient-to-b from-white to-white/60 drop-shadow-2xl">
+                Under<br class="md:hidden" />
+                <span class="font-normal block mt-2 md:mt-4 text-white">Construction</span>
+              </h1>
+              
+              <!-- Decorative Divider -->
+              <div class="w-24 h-1.5 bg-brand-blue rounded-full my-8 shadow-[0_0_20px_rgba(48,105,254,0.8)]"></div>
+              
+              <!-- Subtext -->
+              <p class="text-gray-200 text-lg md:text-2xl lg:text-3xl font-light tracking-[0.2em] uppercase animate-pulse-slow">
+                We will be back soon!
+              </p>
+            </div>
+      
+        </div>
+
+    </main>
+
+    <!-- FOOTER COMPONENT -->
+    <footer class="w-full py-12 px-6 flex flex-col items-center justify-center z-10 animate-fade-in bg-gradient-to-t from-black via-black/80 to-transparent opacity-0" style="animation-delay: 0.5s; animation-fill-mode: forwards;">
+        <div class="w-full max-w-md flex flex-col items-center gap-8">
+          
+          <p class="text-xs md:text-sm font-display tracking-[0.2em] uppercase text-gray-400">
+            Stay Connected
+          </p>
+  
+          <!-- Social Media Links -->
+          <div class="flex items-center justify-center gap-6">
+            <!-- Facebook -->
+            <a 
+              href="https://www.facebook.com/www.mastersport.ge" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              class="group p-3 rounded-full bg-black/40 border border-white/10 hover:border-brand-blue hover:bg-brand-blue/10 transition-all duration-300 hover:scale-110"
+              aria-label="Facebook"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-400 group-hover:text-brand-blue transition-colors">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+              </svg>
+            </a>
+
+            <!-- Instagram -->
+            <a 
+              href="https://instagram.com" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              class="group p-3 rounded-full bg-black/40 border border-white/10 hover:border-brand-blue hover:bg-brand-blue/10 transition-all duration-300 hover:scale-110"
+              aria-label="Instagram"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-400 group-hover:text-brand-blue transition-colors">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+              </svg>
+            </a>
+
+            <!-- Twitter/X -->
+            <a 
+              href="https://twitter.com" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              class="group p-3 rounded-full bg-black/40 border border-white/10 hover:border-brand-blue hover:bg-brand-blue/10 transition-all duration-300 hover:scale-110"
+              aria-label="Twitter"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-400 group-hover:text-brand-blue transition-colors">
+                <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/>
+              </svg>
+            </a>
+
+            <!-- YouTube -->
+            <a 
+              href="https://youtube.com" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              class="group p-3 rounded-full bg-black/40 border border-white/10 hover:border-brand-blue hover:bg-brand-blue/10 transition-all duration-300 hover:scale-110"
+              aria-label="YouTube"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-400 group-hover:text-brand-blue transition-colors">
+                <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/>
+                <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Contact Info -->
+          <div class="text-center space-y-2">
+            <a 
+              href="mailto:info@mastersport.ge" 
+              class="text-xs md:text-sm text-gray-400 hover:text-brand-blue transition-colors duration-300 font-light tracking-wide"
+            >
+              info@mastersport.ge
+            </a>
+          </div>
+        </div>
+        
+        <div class="mt-8 text-[10px] text-gray-600 font-sans tracking-wider uppercase">
+          © <span id="year"></span> MasterSport.ge
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT LOGIC -->
+    <script>
+        // Set current year
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
